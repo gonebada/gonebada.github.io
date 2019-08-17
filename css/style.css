@@ -226,9 +226,9 @@ input[type="date"]:first-child { -webkit-border--top-right-radius: 0px; -moz-bor
 
 input[type="date"]:nth-child(2) { -moz-border-top-left-radius: 0px; border-top-left-radius: 0px; -moz-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; -webkit-border--top-right-radius: 5px; -moz-border-top-right-radius: 5px; border-top-right-radius: 5px; -webkit-border--bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; border-left: none; padding: 5px 10px; margin-left: -3px; }
 
-body.registration .row { padding: 20px 0; margin: 3px 0; }
-
 body.registration .justify-content-center > div { margin-top: 1em; -ms-flex-align: center; align-items: center; width: 100%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: stretch; align-items: stretch; }
+
+body.registration .container-fluid.form .row { padding: 20px 0; margin: 3px 0; }
 
 body.registration h3 { margin: 0; padding: 15px 15px 15px 15px; }
 
@@ -290,9 +290,9 @@ input[type="date"]:first-child { -webkit-border--top-right-radius: 0px; -moz-bor
 
 input[type="date"]:nth-child(2) { -moz-border-top-left-radius: 0px; border-top-left-radius: 0px; -moz-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; -webkit-border--top-right-radius: 5px; -moz-border-top-right-radius: 5px; border-top-right-radius: 5px; -webkit-border--bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; border-left: none; padding: 5px 10px; margin-left: -3px; }
 
-body.registration .row { padding: 20px 0; margin: 3px 0; }
-
 body.registration .justify-content-center > div { margin-top: 1em; -ms-flex-align: center; align-items: center; width: 100%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: stretch; align-items: stretch; }
+
+body.registration .container-fluid.form .row { padding: 20px 0; margin: 3px 0; }
 
 body.registration h3 { margin: 0; padding: 15px 15px 15px 15px; }
 
@@ -413,3 +413,5 @@ img.chart { max-width: 100%; height: auto; }
   input[type="date"]:first-child { -webkit-border--top-right-radius: 0px; -moz-border-top-right-radius: 0px; border-top-right-radius: 0px; -webkit-border--bottom-right-radius: 0px; -moz-border-bottom-right-radius: 0px; border-bottom-right-radius: 0px; -moz-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; border-right: 1px inset; padding: 2px 5px; margin: 0; /* &:after { content: "|"; font-weight: 40px; margin-right: -13px; color: $disabled; }*/ }
   input[type="date"]:nth-child(2) { -moz-border-top-left-radius: 0px; border-top-left-radius: 0px; -moz-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; -webkit-border--top-right-radius: 5px; -moz-border-top-right-radius: 5px; border-top-right-radius: 5px; -webkit-border--bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; border-left: none; padding: 2px 5px; margin-left: -3px; }
   .btn { color: #fff; padding: 5px 10px; border-radius: 5%; font-size: 15px; border: none; } }
+
+canvas { padding: 20px 35px 20px 35px; }

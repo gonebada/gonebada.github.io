@@ -9,92 +9,147 @@
 </head>
 
 <body class="registration">
-    <div class="container-fluid form">
-        <form>
-            <!--novalidate-->
-            <h3>Personal Data
-            </h3>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div class="">
-                        <label for='name'>Name:</label>
-                        <input type="text" id="name" name="userName" reqiured placeholder="Leonardo" minlength="3">
-                    </div>
-                    <div class="">
-                        <label for='surname'>Surname:</label>
-                        <input type='text' id='surname' name='userSurname' placeholder="Dicaprio" minlength="3">
-                    </div>
-                    <div class="">
-                        <label for='email'>E-mail:</label>
-                        <input type='email' id='mail' name='userEmail' placeholder="leo@gmail.com" minlength="3">
-                    </div>
-                    <div class="">
-                        <label for='phone'>Phone number:</label>
-                        <input type='number' id='phone' name='userPhone' placeholder="+1 432 555 00 44" minlength="3">
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <label for='skype'>Skype:</label>
-                        <input type="text" id="skype" name="userSkype">
-                    </div>
-                    <div>
-                        <label for='icq'>ICQ:</label>
-                        <input type='text' id='icq' name='userICQ'>
-                    </div>
-                    <div>
-                        <label for='msn'>Msn:</label>
-                        <input type='text' id='msn' name='userMsn'>
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <label for='wallet'>Wallet:</label>
-                        <input type='text' id='wallet' name='userWallet'>
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <label for='password'>Password:</label>
-                        <input type='password' id='password' name='userPassword' minlength="7" autocomplete="current-password" required>
-                    </div>
-                    <div>
-                        <label for='rptpassword'>Repeat:</label>
-                        <input type='password' id='rptpassword' name='userPasswordrpt' minlength="7" autocomplete="current-password" required>
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="col col-lg-3">
-            </div>
-            <div class="row">
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <div class="button">
-                            <button type="submit" class="btn btn-success">Save</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 sidebar">
+                <div class="item-sidebar">
+                    <!-- sidebar -->
+                    <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger" id="toggleBtn"></i></h2>
+                    <div class="side-nav fixed">
+                        <ul>
+                            <li class="active"><a href="../../index.html"><i class="fas fa-bars item-icon-text"></i>General</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Detail</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Links</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Banners</a></li>
+                            <li><a href="sass/pages/registration_form.html"><i class="fas fa-bars"></i>Personal Data</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Payout</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Postback</a></li>
+                        </ul>
+                        <hr>
+                        <!-- Usesr --->
+                        <div class="logo-wrapper avatar">
+                            <p>YOUR MANAGER</p>
+                            <img src='https://via.placeholder.com/45' alt='' class='user-avatar'> <span class="dot-active"></span>
+                            <a> Mikhael E.</a>
                         </div>
                     </div>
-                    <div class="col col-lg-3"></div>
                 </div>
             </div>
-        </form>
+            <div class="col-lg-10  col-md-12 col-sm-12">
+                <div class="item-nav" id="nav-1">
+                    <ul>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow" onclick="resize('div.item-nav','120px')">&#9660;</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="sass/pages/registration_form.html">Personal Data</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i class="far fa-bell item-icon-text"><span class="dot-info"></span></i>
+                        </li>
+                        <li><a href="#"><i></i></a>Leonardo Dicaprio</li>
+                        <li><i class="fas fa-sign-out-alt item-icon-text"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="container-fluid form">
+                        <form>
+                            <!--novalidate-->
+                            <h3>Personal Data
+                            </h3>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div class="">
+                                        <label for='name'>Name:</label>
+                                        <input type="text" id="name" name="userName" reqiured placeholder="Leonardo" minlength="3">
+                                    </div>
+                                    <div class="">
+                                        <label for='surname'>Surname:</label>
+                                        <input type='text' id='surname' name='userSurname' placeholder="Dicaprio" minlength="3">
+                                    </div>
+                                    <div class="">
+                                        <label for='email'>E-mail:</label>
+                                        <input type='email' id='mail' name='userEmail' placeholder="leo@gmail.com" minlength="3">
+                                    </div>
+                                    <div class="">
+                                        <label for='phone'>Phone number:</label>
+                                        <input type='number' id='phone' name='userPhone' placeholder="+1 432 555 00 44" minlength="3">
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <label for='skype'>Skype:</label>
+                                        <input type="text" id="skype" name="userSkype">
+                                    </div>
+                                    <div>
+                                        <label for='icq'>ICQ:</label>
+                                        <input type='text' id='icq' name='userICQ'>
+                                    </div>
+                                    <div>
+                                        <label for='msn'>Msn:</label>
+                                        <input type='text' id='msn' name='userMsn'>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <label for='wallet'>Wallet:</label>
+                                        <input type='text' id='wallet' name='userWallet'>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <label for='password'>Password:</label>
+                                        <input type='password' id='password' name='userPassword' minlength="7" autocomplete="current-password" required>
+                                    </div>
+                                    <div>
+                                        <label for='rptpassword'>Repeat:</label>
+                                        <input type='password' id='rptpassword' name='userPasswordrpt' minlength="7" autocomplete="current-password" required>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="col col-lg-3">
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <div class="button">
+                                            <button type="submit" class="btn btn-success">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/8aae2ce4b1.js">
     </script>
