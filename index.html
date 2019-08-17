@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OwnProject</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 sidebar">
+                <div class="item-sidebar">
+                    <!-- sidebar -->
+                    <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger" id="toggleBtn"></i></h2>
+                    <div class="side-nav fixed">
+                        <ul>
+                            <li class="active"><a href="#"><i class="fas fa-bars item-icon-text"></i>General</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Detail</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Links</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Banners</a></li>
+                            <li><a href="sass/pages/registration_form.html"><i class="fas fa-bars"></i>Personal Data</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Payout</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Postback</a></li>
+                        </ul>
+                        <hr>
+                        <!-- Usesr --->
+                        <div class="logo-wrapper avatar">
+                            <p>YOUR MANAGER</p>
+                            <img src='https://via.placeholder.com/45' alt='' class='user-avatar'> <span class="dot-active"></span>
+                            <a> Mikhael E.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10  col-md-12 col-sm-12">
+                <div class="item-nav" id="nav-1">
+                    <ul>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow" onclick="resize('div.item-nav','120px')">&#9660;</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="sass/pages/registration_form.html">Personal Data</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i class="far fa-bell item-icon-text"><span class="dot-info"></span></i>
+                        </li>
+                        <li><a href="#"><i></i></a>Leonardo Dicaprio</li>
+                        <li><i class="fas fa-sign-out-alt item-icon-text"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="item-main">
+                            <div class="item-header card-1">
+                                <h3>General statistic</h3>
+                            </div>
+                            <div class="item-card-1">
+                                <div class="item-card-1-dates">
+                                    <input type="date" name="start-period" min="2019-01-01" value="2016-07-21">
+                                    <input type="date" name="end-period" min="2019-01-01" value="2016-07-21">
+                                    <button class="btn btn-success dates"><i class="fas fa-redo"></i></button>
+                                    <hr>
+                                </div>
+                                <div class="item-card-1-chart">
+                                    <canvas id="myChart"></canvas>
+                                    <!--                                    <img class="chart" src="images/chart.png">-->
+                                    <!--<img class="chart" src="images/chart.png" alt="bar" srcset="/images/chart-medium.png 1024w,
+               /images/chart-small.png 2048w,
+               /images/chart-small.png 800w">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="item-header card-2">
+                            <h3>Links</h3>
+                        </div>
+                        <div class="scroll-wrapper item-card-2">
+                            <button class="btn btn-success">+ add new</button>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="strong">Home page</td>
+                                        <td>http://www.homepage.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Currently offer</td>
+                                        <td>Chttp://www.currently.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Blurpix</td>
+                                        <td>http://www.blurpix.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Your Site</td>
+                                        <td>http://www.yoursite.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Google</td>
+                                        <td>http://www.google.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Facebook</td>
+                                        <td>http://www.facebook.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Dashboard</td>
+                                        <td>http://www.dashboard.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Blurax</td>
+                                        <td>http://www.blurax.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Piece of Wine</td>
+                                        <td>http://www.pieceofwine.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                        <!-- 
+                                    <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                    <td class="on-hover"><i class="fas fa-link"></i></td>-->
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Twitter</td>
+                                        <td>http://www.twiiter.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-success btn--inline">+ add new</button>
+                            <button class="btn btn-success btn--inline" id='modalLogIn' onclick="openModal('#logInModal')">Open Modal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---MODAL --->
+            <div class="overlay" id='overlay'>
+                <div class="modal" id='logInModal'>
+                    <!--                    <div class="btn btn-close js--close-modal">x</div>-->
+                    <h4>LOGIN</h4>
+                    <hr>
+                    <div class="form--inline">
+                        <!--                        <label for='login'>Password:</label>-->
+                        <input type='text' id='login' name='userloginName' minlength="3" placeholder="login name" required><i class="far fa-user placeholder--icon"></i>
+                        <!--                        <label for='password'>Password:</label>-->
+                        <input type='password' id='password' name='userPassword' minlength="7" placeholder='password' autocomplete="current-password" required><i class="fas fa-key placeholder--icon"></i>
+                        <div class="btn btn-success js--close-modal">Enter</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

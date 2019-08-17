@@ -1,0 +1,114 @@
+//==== DATES // 
+.item-card-1-dates {
+    width: 100%;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+input[type="date"] {
+    float: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $disabled;
+
+    &:first-child {
+        @include border-right-radius(0px);
+        @include border-left-radius(5px);
+        border-right: 1px inset;
+        padding: 5px 10px;
+        margin: 0;
+        /*
+        &:after {
+            content: "|";
+            font-weight: 40px;
+            margin-right: -13px;
+            color: $disabled;
+        }*/
+    }
+
+    &:nth-child(2) {
+        @include border-left-radius(0px);
+        @include border-right-radius(5px);
+        border-left: none;
+        padding: 5px 10px;
+        margin-left: -3px;
+
+    }
+}
+
+//=== Register CARD // 
+body.registration {
+  
+    .row {
+        padding: 20px 0;
+        margin: 3px 0;
+    }
+
+    .justify-content-center > div {
+        margin-top: 1em;
+        align-items: center;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        align-items: stretch;
+
+    }
+
+    h3 {
+        margin: 0;
+        padding: 15px 15px 15px 15px;
+
+        & hr {
+            margin: 5px -10px 0 -10px;
+        }
+    }
+
+    label {
+        text-align: justify;
+        float: right;
+        width: 150px;
+    }
+
+    input {
+        width: 200px;
+
+        &:focus {
+            outline: none;
+            //  border-color: rgba(245, 130, 32, 0.9);
+        }
+
+        &:valid {
+            outline: none;
+            border-color: $dot-active;
+        }
+
+        &:valid + ::placeholder,
+        &:focus + placeholder {
+            color: rgba(245, 130, 32, 0.9);
+            font-size: 14px;
+            transition: 1s;
+            //transform: translate(300px, 30PX);}
+            transform: translate(0, 70PX);
+        }
+
+        &:focus:invalid {
+            color: $brand-main-color;
+            border-color: rgba(245, 130, 32, 0.9);
+            font-size: 14px;
+            outline: none;
+            //   transition: 1s;
+            //transform: translate(300px, 30PX);}
+            // transform: translate(0, 70PX);
+        }
+
+        &::placeholder {
+            font-size: 12px;
+            padding: 8px;
+        }
+
+    }
+}

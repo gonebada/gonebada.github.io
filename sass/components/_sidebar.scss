@@ -1,0 +1,94 @@
+    
+.item-sidebar {
+    width: 100%;
+    background-color: #333333;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    margin-left: 0;
+    padding-left: 0;
+
+    & .sidebar-icon {
+        position: absolute;
+        right: 10px;
+    }
+
+    & .side-nav [class*='fas'] {
+        margin: 0 15px 20px 0;
+        padding: 0;
+    }
+
+    & .side-nav ul {
+        list-style-type: none;
+        margin-bottom: 40px;
+        padding-left: 0;
+
+        & li {
+            line-height: 40px;
+
+
+
+            & a {
+                padding-left: 15px;
+            }
+
+            &:hover {
+                background-color: $font-black; //$hover-2;
+                border-left: 4px solid $warning;
+
+                & a {
+                    color: $hover;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+
+a {
+    height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: $light;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.avatar {
+    margin: 10px;
+
+    & .user-avatar {
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    & p {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    & a {
+        color: $font-blue;
+    }
+}
+
+.dot-active {
+    @include status-dot($dot-active, 12px, 12px);
+    left: 38px;
+}
+
+
+.sidebar-show-hide-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+}

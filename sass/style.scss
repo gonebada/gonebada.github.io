@@ -1,0 +1,138 @@
+/*kolejnosc jest wazna*/
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+
+
+
+/* Components */
+@import "components/buttons";
+@import "components/forms";
+@import "components/nav";
+@import "components/forms";
+@import "components/sidebar";
+@import "components/table";
+@import "components/image";
+@import "components/modal";
+
+///* Sections*/ 
+//@import "section_on/registration_form";
+
+/* Pages / View */
+//@import "pages/registration_form";
+
+
+@media only screen and (max-width: 760px) {
+    .scroll-wrapper {
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            width: 100% !important;
+        }
+
+
+        td {
+            border: none;
+            border-bottom: 1px solid $disabled;
+            postiion: relative;
+            padding-left: 50%;
+        }
+
+        td:first-child {
+            margin: 0;
+            padding: 5px;
+        }
+
+        & td:nth-child(3),
+        & td:nth-child(4) {
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 760px),
+(min-width: 768px) and (max-width: 1024px) {
+    h3 {
+        font-size: $h3-small-screen;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    input[type="date"] {
+        float: center;
+        border-width: 1px;
+        border-style: solid;
+        font-size: small-screen;
+        border-color: $disabled;
+        margin-top: 5px;
+
+        &:first-child {
+            @include border-right-radius(0px);
+            @include border-left-radius(5px);
+            border-right: 1px inset;
+            padding: 2px 5px;
+            margin: 0;
+            /*
+        &:after {
+            content: "|";
+            font-weight: 40px;
+            margin-right: -13px;
+            color: $disabled;
+        }*/
+        }
+
+        &:nth-child(2) {
+            @include border-left-radius(0px);
+            @include border-right-radius(5px);
+            border-left: none;
+            padding: 2px 5px;
+            margin-left: -3px;
+
+        }
+    }
+
+    .btn {
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5%;
+        font-size: 15px;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+///* This is the style of our error messages */
+//.error {
+//    width: 100%;
+//    padding: 0;
+//
+//    font-size: 80%;
+//    color: white;
+//    background-color: #900;
+//    border-radius: 0 0 5px 5px;
+//
+//    -moz-box-sizing: border-box;
+//    box-sizing: border-box;
+//}
+//
+//.error.active {
+//    padding: 0.3em;
+//}
