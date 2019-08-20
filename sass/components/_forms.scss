@@ -43,18 +43,15 @@ body.registration {
     & .justify-content-center > div {
         margin-top: 1em;
         align-items: center;
-
         width: 100%;
         display: flex;
         justify-content: center;
-
         align-items: stretch;
-
     }
 
     & .container-fluid.form .row {
-            padding: 20px 0;
-            margin: 3px 0;
+        padding: 20px 0;
+        margin: 3px 0;
     }
 
     & h3 {
